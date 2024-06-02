@@ -1,0 +1,201 @@
+body {
+    font-family: 'Gentium Plus', serif;
+    background-color: #f3e8ff;
+    color: #4a4a4a;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    padding-top: 80px; /* Añadir padding para evitar contenido debajo de la navbar */
+}
+
+.dark-mode {
+    background-color: #f3e8ff;
+    color: #000000;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #e0b3ff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #4a4a4a;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    margin-left: 15px; /* Añadir margen a la izquierda del botón de tema */
+}
+
+.menu-logo {
+    height: 50px;
+    margin: 0 15px;
+}
+
+.dark-mode .nav-links a,
+.dark-mode .theme-toggle {
+    color: #0d0d0e;
+}
+
+.about-us, .about-company, .nosotros-somos {
+    text-align: center;
+    padding: 20px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.team-member {
+    background-color: #e0b3ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    flex: 1 1 200px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.dark-mode .team-member {
+    background-color: #3a3a3a;
+}
+
+header {
+    background-color: #4b0082;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu a.active {
+    font-weight: bold;
+}
+
+.imagen-superior {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.colaboraciones-alianzas,
+.valor-diferencial,
+.resultados-comprobados,
+.unase-nosotros {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.valor-diferencial ul,
+.resultados-comprobados ul {
+    list-style: none;
+    padding: 0;
+}
+
+.valor-diferencial li,
+.resultados-comprobados li {
+    margin-bottom: 10px;
+}
+
+.unase-nosotros p {
+    font-style: italic;
+    color: #000000;
+    text-align: center;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #4a4a4a;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .nav-links-container {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-links a {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
