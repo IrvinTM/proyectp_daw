@@ -12,6 +12,32 @@
 .boton:hover {
   background-color: #6c63ff;
 }
+.footer-section {
+  margin-bottom: 20px; 
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 10px;
+}
+
+.footer-social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-social-icons img {
+  margin-bottom: 10px; 
+}
+
+.footer-social-icons .boton {
+  margin-top: 10px; 
+}
 
 @tailwind base;
 @tailwind components;
