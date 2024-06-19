@@ -1,19 +1,340 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-</head>
-<body>
-    <h1>Quien es Catering Experts </h1>
-    <p>
-        
-        Nacemos en el año 2020 durante la pandemia 
-        del covid 19, esto nos ayudo a ser resilientes
-        desde el principio, enfocandonos siempre en
-        brindar un servicio espectacular a nuestros clientes.
+<html lang="es">
 
-    </p>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiénes Somos</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <script src="js/script.js"></script>
+</head>
+
+<body class="bg-purple-100 text-purple-900 dark:bg-slate-800 dark:text-white">
+    <header class="fixed top-0 w-full dark:bg-slate-900 max-h-16 bg-purple-200 shadow-md z-[100]">
+        <nav
+            class="relative px-1 py-1 xl:h-24 lg:h-24 flex justify-between whitespace-nowrap bg-purple-200 lg:shadow-md dark:bg-slate-900 z-0">
+            <div class="lg:hidden">
+                <button class="navbar-burger fixed right-1 text-slate-400 p-3">
+                    <svg class="block h-8 w-8 fill-current navbar-button" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <ul class="hidden absolute min-w-fit top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex">
+                <li><a class="text-4xl" href="/">UES</a></li>
+                <li>
+                    <a class="text-3xl text-gray-500 hover:text-purple-600 text-center p-3.5"
+                        href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a class="text-3xl text-gray-500 hover:text-purple-600 text-center p-3.5" href="about.html">Quienes
+                        somos</a>
+                </li>
+                <li>
+                    <a class="text-3xl text-gray-500 hover:text-purple-600 text-center p-3.5"
+                        href="customers.html">Nuestros
+                        Clientes</a>
+                </li>
+                <li>
+                    <a class="text-3xl text-gray-500 hover:text-purple-600 text-center p-3.5"
+                        href="team.html">Equipo</a>
+                </li>
+                <li>
+                    <a class="text-3xl text-gray-500 hover:text-purple-600 text-center p-2.5"
+                        href="contact.html">Contactanos</a>
+                </li>
+                <li>
+                    <div onclick="toggleTheme()" class="flex flex-col justify-center ml-3">
+                        <input type="checkbox" name="light-switch" class="light-switch sr-only" />
+                        <label class="relative cursor-pointer p-2" for="light-switch">
+                            <svg class="dark:hidden" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                <path class="fill-slate-500"
+                                    d="M7 0h2v2H7zM12.88 1.637l1.414 1.415-1.415 1.413-1.413-1.414zM14 7h2v2h-2zM12.95 14.433l-1.414-1.413 1.413-1.415 1.415 1.414zM7 14h2v2H7zM2.98 14.364l-1.413-1.415 1.414-1.414 1.414 1.415zM0 7h2v2H0zM3.05 1.706 4.463 3.12 3.05 4.535 1.636 3.12z" />
+                                <path class="fill-slate-500" d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z" />
+                            </svg>
+                            <svg class="hidden dark:block" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                <path class="fill-slate-400"
+                                    d="M6.2 1C3.2 1.8 1 4.6 1 7.9 1 11.8 4.2 15 8.1 15c3.3 0 6-2.2 6.9-5.2C9.7 11.2 4.8 6.3 6.2 1Z" />
+                                <path class="fill-slate-500"
+                                    d="M12.5 5a.625.625 0 0 1-.625-.625 1.252 1.252 0 0 0-1.25-1.25.625.625 0 1 1 0-1.25 1.252 1.252 0 0 0 1.25-1.25.625.625 0 1 1 1.25 0c.001.69.56 1.249 1.25 1.25a.625.625 0 1 1 0 1.25c-.69.001-1.249.56-1.25 1.25A.625.625 0 0 1 12.5 5Z" />
+                            </svg>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <nav class="xl:hidden lg:hidden flex justify-between items-center content-center whitespace-nowrap h-16">
+            <a href="/">
+                <img class="h-14 pl-4 pb-4"
+                    src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Escudo_de_la_Universidad_de_El_Salvador.svg"
+                    alt="noimage" />
+            </a>
+        </nav>
+        <div class="navbar-menu relative pb-20 z-50 hidden">
+            <div class="navbar-backdrop fixed inset-0 opacity-10"></div>
+            <nav
+                class="fixed top-0 right-0 bottom-0 flex flex-col w-1/3 max-w-sm py-6 px-6 overflow-y-auto bg-purple-200 dark:bg-slate-900">
+                <div class="flex items-center mb-8">
+                    <button class="navbar-close">
+                        <svg class="h-8 w-8 fixed right-3 top-3 text-gray-500 cursor-pointer hover:text-purple-600"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div>
+                    <ul>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-500 hover:bg-purple-200 hover:text-purple-600 rounded"
+                                href="index.html">Inicio</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-500 hover:bg-purple-200 hover:text-purple-600 rounded"
+                                href="about.html">Quienes somos</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-500 hover:bg-purple-200 hover:text-purple-600 rounded"
+                                href="customers.html">Nuestros Clientes</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-500 hover:bg-purple-200 hover:text-purple-600 rounded"
+                                href="team.html">Equipoo</a>
+                        </li>
+                        <li class="mb-1">
+                            <a class="block p-4 text-sm font-semibold text-gray-500 hover:bg-purple-200 hover:text-purple-600 rounded"
+                                href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <div onclick="toggleTheme()" class="flex flex-col justify-center ml-3">
+                        <input type="checkbox" name="light-switch" class="light-switch sr-only" />
+                        <label class="relative cursor-pointer p-2" for="light-switch">
+                            <svg class="dark:hidden" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                <path class="fill-slate-500"
+                                    d="M7 0h2v2H7zM12.88 1.637l1.414 1.415-1.415 1.413-1.413-1.414zM14 7h2v2h-2zM12.95 14.433l-1.414-1.413 1.413-1.415 1.415 1.414zM7 14h2v2H7zM2.98 14.364l-1.413-1.415 1.414-1.414 1.414 1.415zM0 7h2v2H0zM3.05 1.706 4.463 3.12 3.05 4.535 1.636 3.12z" />
+                                <path class="fill-slate-500" d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z" />
+                            </svg>
+                            <svg class="hidden dark:block" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                <path class="fill-slate-400"
+                                    d="M6.2 1C3.2 1.8 1 4.6 1 7.9 1 11.8 4.2 15 8.1 15c3.3 0 6-2.2 6.9-5.2C9.7 11.2 4.8 6.3 6.2 1Z" />
+                                <path class="fill-slate-500"
+                                    d="M12.5 5a.625.625 0 0 1-.625-.625 1.252 1.252 0 0 0-1.25-1.25.625.625 0 1 1 0-1.25 1.252 1.252 0 0 0 1.25-1.25.625.625 0 1 1 1.25 0c.001.69.56 1.249 1.25 1.25a.625.625 0 1 1 0 1.25c-.69.001-1.249.56-1.25 1.25A.625.625 0 0 1 12.5 5Z" />
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+                <div class="mt-auto">
+                    <p class="my-4 text-xs text-center text-gray-500">
+                        <span>Copyright © 2021</span>
+                    </p>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div
+        class="bg-purple-100 dark:bg-slate-800 dark:text-white text-purple-900 mb-8 mx-4 md:mx-8 lg:mx-16 xl:mx-20 pt-20 lg:pt-24">
+        <div class="py-6 text-center">
+            <h1
+                class="mb-4 text-center text-4xl mt-6 font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
+                QUIÉNES SOMOS
+            </h1>
+        </div>
+        <div class="container mx-auto px-4">
+            <div class="mb-8 mx-auto">
+                <h1 class="text-3xl text-purple-700 text-center font-bold mb-4 dark:text-white">
+                    Nuestra historia y compromiso
+                </h1>
+                <div class="bg-white dark:bg-slate-700 dark:text-white p-4 text-2xl font-bold text-center">
+                    Somos UES DESIGN, una agencia enfocada en la planificación
+                    estratégica, diseño y desarrollo de soluciones de diseño gráfico y
+                    branding en El Salvador y Centroamérica. Nos dedicamos a
+                    proporcionar servicios personalizados a micro, pequeñas y medianas
+                    empresas, ayudándolas a ganar exposición y reconocimiento de manera
+                    rápida y sencilla.
+                </div>
+                <div class="flex flex-wrap justify-center mt-8">
+                    <div
+                        class="max-w-sm rounded overflow-hidden shadow bg-purple-200 dark:bg-slate-700 dark:text-white mx-4 mb-4">
+                        <div class="px-6 py-4">
+                            <img src="images/Color.jpg" alt="" class="object-cover w-48 h-48" />
+                            <div class="text-center font-semibold  mt-2 dark:text-white">
+                                Somos
+                            </div>
+                            <div class="text-center font-semibold mt-2 dark:text-white">
+                                Color
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="max-w-sm rounded overflow-hidden shadow bg-purple-200 dark:bg-slate-700 dark:text-white mx-4 mb-4">
+                        <div class="px-6 py-4">
+                            <img src="images/Composicion.jpg" alt="" class="object-cover w-48 h-48" />
+                            <div class="text-center font-semibold  mt-2 dark:text-white">
+                                Somos
+                            </div>
+                            <div class="text-center font-semibold  mt-2 dark:text-white">
+                                Herramientas Tecnológicas
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="max-w-sm rounded overflow-hidden shadow bg-purple-200 dark:bg-slate-700 dark:text-white mx-4 mb-4">
+                        <div class="px-6 py-4">
+                            <img src="images/Herramientas.jpg" alt="" class="object-cover w-48 h-48" />
+                            <div class="text-center font-semibold  mt-2 dark:text-white">
+                                Somos
+                            </div>
+                            <div class="text-center font-semibold  mt-2 dark:text-white">
+                                visión para tu Composición
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="max-w-sm rounded overflow-hidden shadow bg-purple-200 dark:bg-slate-700 dark:text-white mx-4 mb-4">
+                        <div class="px-6 py-4">
+                            <img src="images/Tipografia.jpg" alt="" class="object-cover w-48 h-48" />
+                            <div class="text-center font-semibold  mt-2 dark:text-white">
+                                Somos
+                            </div>
+                            <div class="text-center font-semibold mt-2 dark:text-white">
+                                tu Tipografía ideal
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="rounded overflow-hidden shadow bg-purple-700 dark:bg-slate-600 text-white">
+                <div class="px-6 py-4">
+                    <div class="text-center font-bold text-2xl mb-4">
+                        Nuestra Historia
+                    </div>
+                    <p class="text-gray-100 text-lg">
+                        Doe creó UES DESIGN con la visión de ofrecer soluciones de
+                        diseño excepcionales que no solo cumplan, sino que superen las
+                        expectativas de nuestros clientes. Su liderazgo y pasión por el
+                        diseño han sido fundamentales para nuestro crecimiento y éxito
+                        continuo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="rounded overflow-hidden shadow bg-purple-700 dark:bg-slate-500 text-white">
+                <div class="px-6 py-4">
+                    <div class="text-center font-bold text-2xl mb-4">
+                        Nuestra Filosofía
+                    </div>
+                    <p class="text-gray-100 text-lg">
+                        Trabajamos en estrecha colaboración con nuestros clientes,
+                        respetando sus normativas de comunicación e imagen
+                        institucional, y adaptando nuestras soluciones a los nuevos
+                        canales de comunicación que emergen día a día.
+                    </p>
+                </div>
+            </div>
+
+            <div class="rounded overflow-hidden shadow bg-purple-700 dark:bg-slate-400 text-white">
+                <div class="px-6 py-4">
+                    <div class="text-center font-bold text-2xl mb-4">
+                        Nuestra Metodología
+                    </div>
+                    <p class="text-gray-100 text-lg">
+                        Nos familiarizamos con las marcas de nuestros clientes,
+                        adoptando su imagen institucional y objetivos para desarrollar
+                        soluciones que les permitan alcanzar sus metas de manera
+                        efectiva. La experiencia y actualización constante son pilares
+                        fundamentales en nuestra metodología. Nos adaptamos a los
+                        cambios tecnológicos para ofrecer soluciones efectivas y
+                        ventajosas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="rounded overflow-hidden shadow bg-purple-500 dark:bg-slate-600 text-white">
+                <div class="px-6 py-4">
+                    <div class="text-center font-bold text-2xl mb-4">
+                        Colaboraciones y Alianzas
+                    </div>
+                    <p class="text-gray-100 text-lg">
+                        Contamos con el apoyo de grandes empresas de tecnología de la
+                        información como Google, Microsoft, CISCO, LINUX, Amazon y
+                        Adobe. Esta colaboración nos permite estar a la vanguardia y
+                        ofrecer servicios de alta calidad.
+                    </p>
+                </div>
+            </div>
+
+            <div class="rounded overflow-hidden shadow bg-purple-500 dark:bg-slate-500 text-white">
+                <div class="px-6 py-4">
+                    <div class="text-center font-bold text-2xl mb-4">
+                        Nuestro Valor Diferencial
+                    </div>
+                    <ul class="text-gray-100 text-lg">
+                        <li class="mb-2">
+                            <span class="font-bold text-gray-900">Asesoramiento Estratégico:</span> Incluimos asesoría
+                            en estrategia
+                            de
+                            marca y acciones de marketing digital en todos nuestros
+                            servicios.
+                        </li>
+                        <li class="mb-2">
+                            <span class="font-bold text-gray-900">Atención al Detalle:</span> Nos aseguramos de que cada
+                            proyecto sea
+                            ejecutado con la máxima precisión y cuidado.
+                        </li>
+                        <li>
+                            <span class="font-bold text-gray-900">Enfoque Comercial:</span> Planificamos
+                            estratégicamente basándonos
+                            en
+                            objetivos comerciales y análisis de mercado.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rounded overflow-hidden shadow bg-purple-500 dark:bg-slate-400 text-white">
+                <div class="px-6 py-4">
+                    <div class="text-center font-bold text-2xl mb-4">
+                        Resultados Comprobados
+                    </div>
+                    <ul class="text-gray-100 text-lg">
+                        <li class="mb-2">
+                            <span class="font-bold text-gray-900">+15 Años de Experiencia:</span> Hemos desarrollado y
+                            perfeccionado
+                            una metodología propia durante más de quince años.
+                        </li>
+                        <li class="mb-2">
+                            <span class="font-bold text-gray-900">+86% Ahorro de Tiempo:</span> Más del 86% de nuestros
+                            proyectos son
+                            aprobados en la primera propuesta.
+                        </li>
+                        <li>
+                            <span class="font-bold text-gray-900">+500 Proyectos Realizados:</span> Nuestra amplia
+                            experiencia nos
+                            permite abordar proyectos en múltiples áreas con visión y
+                            conocimiento.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-8 text-center">
+        <h2 class="font-bold text-2xl mt-4 mb-4">¡Únase a Nosotros!</h2>
+        <p class="text-lg mb-4">
+            En UES DESIGN, transformamos empresas en grandes marcas mediante un trabajo personalizado y
+            preciso en el detalle. Estamos comprometidos a brindar soluciones creativas y efectivas que impulsen el
+            éxito de nuestros clientes.
+        </p>
+        <p class="text-lg mb-8">
+            ¡Póngase en contacto con nosotros hoy mismo y descubra cómo podemos ayudarle a potenciar su
+            marca!
+        </p>
+    </div>
 </body>
+
 </html>
