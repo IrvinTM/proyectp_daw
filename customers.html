@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="/css/output.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuestros Clientes</title>
+</head>
+
+<body class="bg-purple-100 text-purple-900 dark:bg-slate-800 dark:text-white">
+    <header class="fixed top-0 w-full dark:bg-slate-900 max-h-16 bg-purple-200 shadow-md z-[100]">
+        <nav
+          class="relative px-1 py-1 xl:h-24 lg:h-24 flex justify-between whitespace-nowrap bg-purple-200 lg:shadow-md dark:bg-slate-900 z-0">
+          <div class="lg:hidden">
+            <button class="navbar-burger fixed right-1 text-slate-400 p-3">
+              <svg class="block h-8 w-8 fill-current navbar-button  " viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+              </svg>
+            </button>
+          </div>
+          <ul class="hidden absolute min-w-fit top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex ">
+            <img class="h-[40px] w-[40px] mr-10" src="./images/logo-nobg.png" alt="company-logo">
+            <li><a class="text-3xl text-gray-500 hover:text-purple-600 text-center p-3.5" href="index.html">Inicio</a></li>
+            <li><a class="text-3xl text-gray-500 hover:text-purple-600 text-center p-3.5" href="about.html">Quienes
+                somos</a></li>
+            <li><a class="text-3xl text-gray-500 hover:text-purple-600 text-center p-3.5" href="customers.html">Nuestros Clientes</a>
+            </li>
+            <li><a class="text-3xl text-gray-500 hover:text-purple-600 text-center p-3.5" href="team.html">Equipo</a></li>
+            <li><a class="text-3xl text-gray-500 hover:text-purple-600 text-center p-2.5"
+                href="contact.html">Contactanos</a></li>
+            <li>
+              <div onclick="toggleTheme()" class="flex flex-col justify-center ml-3">
+                <input type="checkbox" name="light-switch" class="light-switch sr-only" />
+                <label class="relative cursor-pointer p-2" for="light-switch">
+                  <svg class="dark:hidden" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-slate-500"
+                      d="M7 0h2v2H7zM12.88 1.637l1.414 1.415-1.415 1.413-1.413-1.414zM14 7h2v2h-2zM12.95 14.433l-1.414-1.413 1.413-1.415 1.415 1.414zM7 14h2v2H7zM2.98 14.364l-1.413-1.415 1.414-1.414 1.414 1.415zM0 7h2v2H0zM3.05 1.706 4.463 3.12 3.05 4.535 1.636 3.12z" />
+                    <path class="fill-slate-500" d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z" />
+                  </svg>
+                  <svg class="hidden dark:block" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-slate-400"
+                      d="M6.2 1C3.2 1.8 1 4.6 1 7.9 1 11.8 4.2 15 8.1 15c3.3 0 6-2.2 6.9-5.2C9.7 11.2 4.8 6.3 6.2 1Z" />
+                    <path class="fill-slate-500"
+                      d="M12.5 5a.625.625 0 0 1-.625-.625 1.252 1.252 0 0 0-1.25-1.25.625.625 0 1 1 0-1.25 1.252 1.252 0 0 0 1.25-1.25.625.625 0 1 1 1.25 0c.001.69.56 1.249 1.25 1.25a.625.625 0 1 1 0 1.25c-.69.001-1.249.56-1.25 1.25A.625.625 0 0 1 12.5 5Z" />
+                  </svg>
+                </label>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <nav class="xl:hidden lg:hidden flex justify-between items-center content-center whitespace-nowrap h-16">
+          <a href="/">
+            <img class="h-14 pl-4 pb-4"
+              src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Escudo_de_la_Universidad_de_El_Salvador.svg"
+              alt="noimage">
+          </a>
+        </nav>
+        <div class="navbar-menu relative pb-20 z-50 hidden">
+          <div class="navbar-backdrop fixed inset-0 opacity-10"></div>
+          <nav
+            class="fixed top-0 right-0 bottom-0 flex flex-col w-1/3 max-w-sm py-6 px-6 overflow-y-auto bg-purple-200 dark:bg-slate-900">
+            <div class="flex items-center mb-8">
+              <button class="navbar-close">
+                <svg class="h-8 w-8 fixed right-3 top-3 text-gray-500 cursor-pointer hover:text-purple-600"
+                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <div>
+              <ul>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-500 hover:bg-purple-200 hover:text-purple-600 rounded"
+                    href="index.html">Inicio</a>
+                </li>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-500 hover:bg-purple-200 hover:text-purple-600 rounded"
+                    href="about.html">Quienes somos</a>
+                </li>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-500 hover:bg-purple-200 hover:text-purple-600 rounded"
+                    href="#">Nuestros Clientes</a>
+                </li>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-500 hover:bg-purple-200 hover:text-purple-600 rounded"
+                    href="team.html">Equipoo</a>
+                </li>
+                <li class="mb-1">
+                  <a class="block p-4 text-sm font-semibold text-gray-500 hover:bg-purple-200 hover:text-purple-600 rounded"
+                    href="contact.html">Contacto</a>
+                </li>
+              </ul>
+              <div onclick="toggleTheme()" class="flex flex-col justify-center ml-3">
+                <input type="checkbox" name="light-switch" class="light-switch sr-only" />
+                <label class="relative cursor-pointer p-2" for="light-switch">
+                  <svg class="dark:hidden" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-slate-500"
+                      d="M7 0h2v2H7zM12.88 1.637l1.414 1.415-1.415 1.413-1.413-1.414zM14 7h2v2h-2zM12.95 14.433l-1.414-1.413 1.413-1.415 1.415 1.414zM7 14h2v2H7zM2.98 14.364l-1.413-1.415 1.414-1.414 1.414 1.415zM0 7h2v2H0zM3.05 1.706 4.463 3.12 3.05 4.535 1.636 3.12z" />
+                    <path class="fill-slate-500" d="M8 4C5.8 4 4 5.8 4 8s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4Z" />
+                  </svg>
+                  <svg class="hidden dark:block" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <path class="fill-slate-400"
+                      d="M6.2 1C3.2 1.8 1 4.6 1 7.9 1 11.8 4.2 15 8.1 15c3.3 0 6-2.2 6.9-5.2C9.7 11.2 4.8 6.3 6.2 1Z" />
+                    <path class="fill-slate-500"
+                      d="M12.5 5a.625.625 0 0 1-.625-.625 1.252 1.252 0 0 0-1.25-1.25.625.625 0 1 1 0-1.25 1.252 1.252 0 0 0 1.25-1.25.625.625 0 1 1 1.25 0c.001.69.56 1.249 1.25 1.25a.625.625 0 1 1 0 1.25c-.69.001-1.249.56-1.25 1.25A.625.625 0 0 1 12.5 5Z" />
+                  </svg>
+                </label>
+              </div>
+            </div>
+            <div class="mt-auto">
+              <p class="my-4 text-xs text-center text-gray-500">
+                <span>Copyright © 2021</span>
+              </p>
+            </div>
+          </nav>
+        </div>
+    </header>
+
+    <div class="flex flex-col items-center content-center justify-center pt-24 md:pt-10 sm:pt-8 lg:pt-24">
+        <div class="flex flex-col items-center content-center justify-centern">
+            <main class="pt-16">
+                <section class="text-center py-8">
+                    <h1 class="text-4xl font-bold">Nuestros Clientes</h1>
+                </section>
+                <main class="pt-16">
+                    <section class="grid-container">
+                        <div class="team-card">
+                            <img src="images/Google.jpg" alt="Logo del Cliente" />
+                            <p class="mt-4">
+                                Google LLC es una empresa multinacional de tecnología
+                                especializada en servicios y productos relacionados con Internet,
+                                software, dispositivos electrónicos y otras tecnologías. Fundada
+                                en 1998 por Larry Page y Sergey Brin mientras cursaban el
+                                doctorado en la Universidad de Stanford, Google ha crecido hasta
+                                convertirse en una de las compañías más influyentes del mundo.
+                                Con su motor de búsqueda líder en el mercado, Google permite a
+                                millones de usuarios encontrar información en línea de manera
+                                rápida y eficiente. Además, la empresa ofrece una variedad de
+                                servicios como Google Maps, YouTube, Google Drive, y la plataforma
+                                de publicidad Google Ads.
+                            </p>
+                        </div>
+                        <div class="team-card">
+                            <img src="images/Microsoft.jpg" alt="Logo del Cliente" />
+                            <p>
+                                Microsoft Corporation es una empresa tecnológica multinacional con
+                                sede en Redmond, Washington. Fundada en 1975 por Bill Gates y Paul
+                                Allen, Microsoft es conocida por desarrollar, fabricar, licenciar,
+                                dar soporte y vender software de computadora, productos
+                                electrónicos de consumo, computadoras personales y servicios
+                                relacionados. Su producto más conocido es el sistema operativo
+                                Microsoft Windows, que es utilizado por millones de personas en
+                                todo el mundo. Además, Microsoft ofrece otros productos y
+                                servicios como el paquete de software de productividad Microsoft
+                                Office, el motor de búsqueda Bing, la consola de videojuegos Xbox
+                                y la plataforma de computación en la nube Azure.
+                            </p>
+                        </div>
+                        <div class="team-card">
+                            <img src="images/Apple.jpg" alt="Logo del Cliente" />
+                            <p>
+                                Apple Inc. es una empresa estadounidense que diseña y fabrica
+                                equipos electrónicos, software y servicios en línea. Fundada en
+                                1976 por Steve Jobs, Steve Wozniak y Ronald Wayne, Apple es
+                                conocida por sus productos innovadores y de alta calidad, como el
+                                iPhone, iPad, Mac, Apple Watch y Apple TV. La empresa también
+                                desarrolla software para sus dispositivos, incluyendo sistemas
+                                operativos como iOS y macOS, así como aplicaciones y servicios
+                                como iTunes, iCloud y la App Store. Apple se ha consolidado como
+                                una de las marcas más valiosas y reconocidas a nivel mundial,
+                                destacándose por su diseño elegante y su enfoque en la experiencia
+                                del usuario.
+                            </p>
+                        </div>
+                        <div class="team-card">
+                            <img src="images/Amazon.jpg" alt="Logo del Cliente" />
+                            <p>
+                                Amazon.com, Inc. es una empresa multinacional de tecnología y
+                                comercio electrónico con sede en Seattle, Washington. Fundada por
+                                Jeff Bezos en 1994, Amazon comenzó como una librería en línea y ha
+                                evolucionado para convertirse en la mayor tienda minorista en línea
+                                del mundo. Amazon ofrece una amplia gama de productos y servicios,
+                                incluyendo electrónica, ropa, alimentos, y más. Además, la empresa
+                                ha expandido sus operaciones a áreas como la computación en la nube
+                                con Amazon Web Services (AWS), entretenimiento digital con Amazon
+                                Prime Video y la inteligencia artificial con dispositivos como
+                                Alexa y el altavoz Echo.
+                            </p>
+                        </div>
+                        <div class="team-card">
+                            <img src="images/Tesla.jpg" alt="Logo del Cliente" />
+                            <p>
+                                Tesla, Inc. es una empresa estadounidense de automóviles y energía
+                                fundada en 2003 por Martin Eberhard y Marc Tarpenning, aunque es
+                                más conocida por su CEO, Elon Musk, quien se unió poco después de
+                                su fundación. Tesla se especializa en la fabricación de vehículos
+                                eléctricos, sistemas de almacenamiento de energía y paneles
+                                solares. Entre sus productos más destacados se encuentran los
+                                automóviles Model S, Model 3, Model X y Model Y, así como la
+                                batería doméstica Powerwall y los paneles solares Solar Roof.
+                                Tesla ha sido pionera en la transición hacia la energía sostenible
+                                y ha influido significativamente en la industria automotriz global.
+                            </p>
+                        </div>
+                    </section>
+                </main>
+            </main>
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer class="bg-purple-200 dark:bg-slate-900 text-purple-900 dark:text-white p-4">
+        <div class="flex justify-center items-center flex-wrap">
+            <h2 class="mb-4 text-center text-2xl mt-2 font-extrabold text-gray-900 dark:text-white md:text-2xl lg:text-2xl">
+                Desarrollo de Aplicaciones Web</h2>
+            <img src="images/Escudo_de_la_Universidad_de_El_Salvador.png" alt="Logo UES"
+                class="w-10 rounded-lg shadow-md mx-4">
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/665954e09a809f19fb3725b5/1hv6f73e8';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>
+
