@@ -3204,6 +3204,10 @@ video {
     margin-bottom: 3rem;
   }
 
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
+  }
+
   .lg\:flex {
     display: flex;
   }
