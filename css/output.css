@@ -1035,6 +1035,10 @@ video {
   height: 2.5rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-14 {
   height: 3.5rem;
 }
@@ -1067,10 +1071,6 @@ video {
   height: 100%;
 }
 
-.h-9 {
-  height: 2.25rem;
-}
-
 .max-h-16 {
   max-height: 4rem;
 }
@@ -1081,6 +1081,10 @@ video {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .w-4 {
@@ -1113,10 +1117,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-9 {
-  width: 2.25rem;
 }
 
 .min-w-fit {
@@ -2188,6 +2188,11 @@ video {
   background-color: rgb(233 213 255 / var(--tw-bg-opacity));
 }
 
+.bg-purple-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 180 254 / var(--tw-bg-opacity));
+}
+
 .bg-purple-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(192 132 252 / var(--tw-bg-opacity));
@@ -2205,21 +2210,6 @@ video {
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-purple-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(88 28 135 / var(--tw-bg-opacity));
-}
-
-.bg-purple-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(216 180 254 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -3331,11 +3321,6 @@ video {
 
 .dark\:bg-gray-800\/30:where(.dark, .dark *) {
   background-color: rgb(31 41 55 / 0.3);
-}
-
-.dark\:bg-purple-400:where(.dark, .dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(192 132 252 / var(--tw-bg-opacity));
 }
 
 .dark\:bg-slate-400:where(.dark, .dark *) {
