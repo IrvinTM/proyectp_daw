@@ -149,3 +149,5 @@ changeImage();
 
 // Start an interval to call changeImage every second
 const intervalId = setInterval(changeImage, 4000);
+
+

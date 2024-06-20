@@ -20,7 +20,7 @@
         </button>
       </div>
       <ul class="hidden absolute min-w-fit top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex ">
-        <img class="h-[40px] w-[40px] mr-10" src="./images/logo-nobg.png" alt="company-logo">
+        <img class="h-[40px] w-[40px] mr-10 logo" src="./images/logo-nobg.png" alt="company-logo">
         <li><a class="text-3xl text-gray-500 hover:text-purple-600 text-center p-3.5" href="index.html">Inicio</a></li>
         <li><a class="text-3xl text-gray-500 hover:text-purple-600 text-center p-3.5" href="about.html">Quiénes
             somos</a></li>
@@ -31,7 +31,7 @@
         <li><a class="text-3xl text-gray-500 hover:text-purple-600 text-center p-2.5"
             href="contact.html">Contáctanos</a></li>
         <li>
-          <div onclick="toggleTheme()" class="flex flex-col justify-center ml-3">
+          <div onclick="toggleTheme()" id="toggle-b" class="flex flex-col justify-center ml-3">
             <input type="checkbox" name="light-switch" class="light-switch sr-only" />
             <label class="relative cursor-pointer p-2" for="light-switch">
               <svg class="dark:hidden" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +53,7 @@
     <nav class="xl:hidden lg:hidden flex justify-between items-center content-center whitespace-nowrap h-16">
       <a href="/">
         <img class="h-14 pl-4 pb-4"
-          src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Escudo_de_la_Universidad_de_El_Salvador.svg"
+          src="./images/logo-nobg.png"
           alt="noimage">
       </a>
     </nav>
@@ -123,8 +123,12 @@
       <h1 class="mb-4 text-center text-4xl mt-6 font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
         Hola somos <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">UES
           DESIGN</span></h1>
-      <p class="text-lg font-normal lg:text-xl dark:text-gray-400 text-center">Sitios web personalizados, branding y
+      <p class="text-lg pb-4 font-normal lg:text-xl dark:text-gray-400 text-center">Sitios web personalizados, branding y
         marqueting digital.</p>
+        <button class="text-black dark:bg-slate-700 dark:border-gray-400 dark:text-slate-100 border border-purple-300 animate-bounce bg-purple-200 rounded-3xl font-bold py-2 px-4">
+          Contratar
+        </button>
+        
     </div>
     <div class="max-w-[1400px] h-[660px] w-full pb-16 pt-2 px-4 relative group z-10">
       <div id="image-container" class="w-full h-full rounded-2xl bg-center bg-cover duration-500">
